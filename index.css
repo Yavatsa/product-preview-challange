@@ -1,0 +1,103 @@
+body{
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 450px;
+  background-color: hsl(30, 38%, 92%);
+}
+.col1{
+  
+  width: 200px;
+  height: 300px;
+}
+.col2{
+  background-color: blue;
+  width: 200px;
+  height: 300px;
+  flex-direction: column;
+  justify-content: space-around; /* Center the text vertically */
+  padding-left: 10px;
+  
+  background-color: aliceblue;
+  
+}
+img{
+  width: 200px;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+p{
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+}
+h1{
+  font-size: 15px;
+}
+h2{
+  color: #2c8757;
+  font-family: 'Fraunces';
+  margin-top: -3px;
+}
+button{
+  background-color: #2c8757; /* Change the background color to blue */
+color: #ffffff; /* Change the text color to white */
+padding: 2px 40px; /* Set padding to control the button's size */
+margin-top: -30px;
+font-size: 16px; /* Set the font size */
+border: none; /* Remove the button border */
+border-radius: 5px; /* Add rounded corners */
+padding-bottom: 5px;
+}
+button:hover{
+  cursor: pointer;
+}
+.price-container{
+  display: flex;
+  margin: 0; /* Remove default margins for the elements */
+ 
+}
+.price-container p{
+  padding-top: 5px;
+  padding-left: 15px;
+  margin-top: 2px;
+  text-decoration: line-through;
+
+}
+.line-space{
+  line-height: 18px;
+}
+.col2 {
+  border-top-right-radius: 10px; /* Adjust the radius as needed */
+  border-bottom-right-radius: 10px;
+}
+@media (max-width: 768px) {
+  /* CSS styles for mobile devices go here */
+  body {
+      margin: 0; /* Remove margins for small screens */
+      padding: 20px; /* Add padding for better spacing */
+  }
+  .col1, .col2 {
+      width: 100%; /* Make columns take up full width */
+      height: auto; /* Allow columns to adjust their height */
+      border-radius: 0; /* Remove border radius for columns */
+  }
+  /* Adjust other styles as needed for mobile layout */
+}
+@media (max-width: 768px) {
+  body {
+      display: flex;
+      flex-direction: column; /* Change the direction to vertical */
+      align-items: center; /* Center-align the content vertically */
+  }
+
+  .col1, .col2 {
+      width: 100%; /* Make columns take up full width */
+      max-width: none; /* Remove max-width constraints if any */
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      
+  }
+}
+
+
